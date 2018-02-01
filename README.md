@@ -1,7 +1,7 @@
 # FAMDUniversity
 Progetto di Programmazione Web - UNICAM (Università degli Studi di Camerino)
 
-# REALIZZATO DA
+# Realizzato da
 Cingolani Filippo - filippo.cingolani@studenti.unicam.it
 
 Nepi Alessandro - alessandro.nepi@studenti.unicam.it
