@@ -54,3 +54,41 @@ Nel complesso sono presenti tre attori principali, ciascuno con funzioni differe
 
 -Come professore voglio poter visualizzare gli studenti scritti ad un appello.
 
+# Installazione
+
+# Node.js
+
+Dal sito ufficiale è possibile scaricare l’installer di Node.js per Windows e per Mac e il codice sorgente (https://nodejs.org/it/).
+
+# MongoDB
+
+Per installare MongoDB basta cliccare sul seguente link https://www.mongodb.com/download-center?jmp=nav#atlas.
+
+# Utilizzo
+
+1. Aprire la cartella contenente il progetto
+
+2. Eliminare la cartella node.modules
+
+3. Aprire il file .env e sostituire a DB_URI il percorso del proprio server
+(DB_URI=&quot;mongodb://FAMD:UniCam1996@ds251807.mlab.com:51807/famduniversity
+PORT=&quot;27017)
+
+4. Sostituire su configuration “mongoose.connect(process.env.DB_URI,{useMongoClient:true}); “
+
+5. Aprire il programma node.js command prompt come amministratore
+
+6. Posizionarsi nel percorso della cartella del progetto
+
+7. Eseguire i seguenti comandi in ordine:
+a) npm -- add-python- to-path=&#39;true&#39; -- debug install -- global windows-build- tools
+
+b) npm install node-gyp -g
+
+c) npm install bcrypt -g
+
+d) npm install bcrypt -save
+
+e) npm install
+
+8. Eseguire il comando “nodemon server.js” per avviare il server
