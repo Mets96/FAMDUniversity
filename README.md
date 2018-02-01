@@ -81,6 +81,7 @@ PORT=&quot;27017)
 6. Posizionarsi nel percorso della cartella del progetto
 
 7. Eseguire i seguenti comandi in ordine:
+
 a) npm -- add-python- to-path=&#39;true&#39; -- debug install -- global windows-build- tools
 
 b) npm install node-gyp -g
