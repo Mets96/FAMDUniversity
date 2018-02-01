@@ -19,9 +19,9 @@ Il progetto consiste nella realizzazione di un sito web riguardante il piano di 
 
 -Come studente voglio potermi iscrivere ad un esame;
 
--Come professore voglio poter caricare ed inviare i risultati degli esami agli studenti
+-Come professore voglio poter caricare ed inviare i risultati degli esami agli studenti;
 
--Come studente voglio visualizzare la mia carriera universitaria anche con l’ausilio di grafici;
+-Come studente voglio visualizzare la mia carriera universitaria anche con l’ausilio di grafici.
 
 # User story aggiuntive - Studente
 -Come studente voglio poter accedere ad un’area privata e successivamente visualizzare/modificare il profilo;
