@@ -1,5 +1,6 @@
 # FAMDUniversity
 Progetto di Programmazione Web - UNICAM (Università degli Studi di Camerino)
+Il progetto consiste nella realizzazione di un sito web riguardante il piano di studi di un'Università.
 
 # Realizzato da
 -Cingolani Filippo - filippo.cingolani@studenti.unicam.it
