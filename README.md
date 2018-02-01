@@ -82,14 +82,14 @@ PORT=&quot;27017)
 
 7. Eseguire i seguenti comandi in ordine:
 
-a) npm -- add-python- to-path=&#39;true&#39; -- debug install -- global windows-build- tools
+ a) npm -- add-python- to-path=&#39;true&#39; -- debug install -- global windows-build- tools
 
-b) npm install node-gyp -g
+ b) npm install node-gyp -g
 
-c) npm install bcrypt -g
+ c) npm install bcrypt -g
 
-d) npm install bcrypt -save
+ d) npm install bcrypt -save
 
-e) npm install
+ e) npm install
 
 8. Eseguire il comando “nodemon server.js” per avviare il server
