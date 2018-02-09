@@ -45,6 +45,12 @@ Nel complesso sono presenti tre attori principali, ciascuno con funzioni differe
 
 -Come admin voglio poter registrare un professore e visualizzare i relativi feedback.
 
+N.B: Esiste un account admin per creare il profilo professori. I dati d'accesso sono i seguenti:
+
+-username: amministratore
+
+-password: amministratore
+
 # User story aggiuntive - Professore
 -Come professore voglio poter accedere alla mia area privata;
 
