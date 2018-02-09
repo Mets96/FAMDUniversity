@@ -1,7 +1,7 @@
 # FAMDUniversity
 Progetto di Programmazione Web - UNICAM (Università degli Studi di Camerino)
 
-Il progetto consiste nella realizzazione di un sito web riguardante il piano di studi di un'Università. All'interno sono presenti cinque facoltà: Informatica, Matematica, Chimica, Biologia e Fisica. 
+Il progetto consiste nella realizzazione di un sito web riguardante il piano di studi di un'Università. All'interno sono presenti cinque facoltà: Informatica, Chimica e Fisica.
 
 Nel complesso sono presenti tre attori principali, ciascuno con funzioni differenti:
 
