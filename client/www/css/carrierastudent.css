@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.bar .title{
+    overflow:visible;
+}
+.bar-header{
+    height: 90px;
+}
+
+.buttons{
+    position:absolute;
+    right: 20px;
+    top:15px;
+}
+
+#logo{
+    position:absolute;
+    z-index: 1;
+    left: 115px;
+    top:40px;
+    
+}
+
+
+/* larghezza del div che contiene la tabella (facoltativo): il valore potrebbe essere omesso se vale 100% oppure se viene definito altrove */
+/*.table-responsive {width: 100%;}
+*/
+/* stile del bordo per la tabella (facoltativo) */
+/*.table-responsive table {border: #ccc solid 1px;}
+*/
+/* istruzioni per le celle (alcune sono obbligatorie) */
+/*.table-responsive table td, .table-responsive table th {min-width: 50px; width: 24%; border: #ccc solid 1px; word-break: break-all; text-align: center; padding: 1%;}
+*/
+/* larghezza delle immagini (facoltativo) */
+/*.table-responsive table td img {max-width: 98%;}
+*/                    

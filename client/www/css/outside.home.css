@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body {
+    background-color: black;
+}
+
+.bar-header{
+    height: 90px;
+}
+
+.buttons{
+    position:absolute;
+    right: 20px;
+    top:15px;
+}
+
+/*.buttons_center{
+    position:absolute;
+    right: 650px;
+    top:300px;
+}*/
+
+#logo{
+    position:absolute;
+    z-index: 1;
+    left: 115px;
+    top:40px;
+    
+}
+.button-stable{
+    top: -20px;
+}
+.button-stable1 {
+    position:relative;
+    background-image: url('/img/informatica.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    width: 200px;
+    height: 150px;
+    margin-left: 300px;
+}
+.button-stable2{
+    background-image: url('/img/chimica.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    width: 200px;
+    height: 150px;
+    margin-left: 80px;
+
+
+
+
+}
+.button-stable3{
+    background-image: url('/img/fisica.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    width: 200px;
+    height: 150px;
+    margin-left: 80px;
+}
+.facolta{
+    position: absolute;
+    width: 100%;
+    top:250px;
+}
