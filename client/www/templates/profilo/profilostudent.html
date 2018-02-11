@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-header-bar class="bar-stable">
+        <link href="../css/carrierastudent.css" rel="stylesheet">
+        <img src="/img/Logo.svg">
+        <div class="buttons">
+        <button class="button button-clear" ui-sref="student"><b><h3>Menu</b></h3></button> 
+        </div>
+</ion-header-bar>
+<ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" class="padding">
+
+    <br>
+    <br>
+        <label class="item item-input">
+            Email: {{currentaccount.email}}
+        </label>
+        <label class="item item-input">
+            Firstname: {{currentaccount.firstname}}
+        </label>
+        <label class="item item-input">
+            Lastname: {{currentaccount.lastname}}
+        </label>
+        <label class="item item-input">
+            Data di nascita: {{currentaccount.bod}}
+        </label>
+        <label class="item item-input">
+            Gender: {{currentaccount.gender}}
+        </label>
+        <label class="item item-input">
+            Corso: {{currentaccount.corso}}
+        </label>
+        <label class="item item-input">
+            Address:<input type="text" value="{{currentaccount.address}}" name="address" placeholder="address" ng-model="currentaccount.address">
+        </label>
+        <label class="item item-input">
+            Cell:<input type="text"  placeholder="cell" value="{{currentaccount.cell}}" name="cell" ng-model="currentaccount.cell">
+        </label>
+        
+        <button class="button button-dark" style="top:10px" ng-click="update()">
+            Aggiorna profilo
+        </button>
+   
+        
+        <button class="button button-dark" style="top:10px" ng-click="ShowCarriera()">
+            Mostra Carriera
+        </button>
+         
+
+    </ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+</ion-view>

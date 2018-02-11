@@ -1,0 +1,28 @@
+<ion-view>
+        <ion-header-bar class="bar-stable">
+            <link href="../css/carrierastudent.css" rel="stylesheet">
+            <img src="/img/Logo.svg">
+            <div class="buttons">
+            <button class="button button-clear" ui-sref="prof"><b><h3>Menu</b></h3></button> 
+            </div>
+  </ion-header-bar>
+  <ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" class="padding">
+
+            <br>
+            <br>
+      
+<form name="myForm" novalidate>
+    
+        <h3>Data dell'esame</h3>
+    <div class="list">
+      <label class="item item-input">
+        <input type="datetime-local"  ng-model="appello.data" >
+    </label>
+        
+</form>
+      
+    <br>
+    <button class="button button-dark" ng-click="addAppello(appello)">      Crea Appello    </button>
+
+  </ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+</ion-view>

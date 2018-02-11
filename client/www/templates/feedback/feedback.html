@@ -1,0 +1,67 @@
+<ion-view>
+        <ion-header-bar class="bar-stable">
+            <link href="../css/carrierastudent.css" rel="stylesheet">
+            <img src="/img/Logo.svg">
+            <div class="buttons">
+             <button class="button button-clear" ng-click="ShowMenu()"><b><h3>Menu</b></h3></button>
+            </div>
+        </ion-header-bar>
+        <ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" class="padding">
+
+            <h1>Elenco Prof</h1>
+            <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
+                <div id="testo"><h3>Appelli disponibili:</h3></div>
+                    <div id="input">    
+                        <input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                </div>
+            </div> 
+
+            <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Nome</th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>Cognome</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="prof in prof| filter:query"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{prof.firstname}}</td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{prof.lastname}}</td>                                                        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th> Scegli il professore a cui vuoi assegnare un feedback </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select ng-model="appello.id" >
+                                    <option  ng-repeat="prof in prof| filter:query" value="{{prof._id}}">{{prof.firstname}} {{prof.lastname}}</option>
+                                    <option selected value="">Scegli...</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form name="myForm" novalidate> 
+                <h3>Inserisci il contentuo del feedback</h3>
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="String"  ng-model="appello.testo" >
+                    </label>
+                </div> 
+            </form>
+        <br>
+        <button class="button button-dark" ng-click="addfeedback(appello)">         Conferma feedback    </button>
+      
+    </ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+    </ion-view>
