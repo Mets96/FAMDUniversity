@@ -1,0 +1,85 @@
+<ion-view>
+        <ion-header-bar class="bar-stable">
+            <link href="../css/carrierastudent.css" rel="stylesheet">
+            <img src="/img/Logo.svg">
+            <div class="buttons">
+            <button class="button button-clear" ui-sref="admin"><b><h3>Menu</b></h3></button> 
+            </div>
+        </ion-header-bar>
+  </ion-header-bar>
+  <ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" class="padding">
+
+        <h1>Verifica Feedback</h1>
+            <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
+                <div id="testo"><h3>Sei interessato a:</h3></div>
+                    <div id="input">    
+                        <input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                </div>
+            </div> 
+
+            <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Nome</th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>Cognome</th>
+
+                            
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="doc in prof| filter:query"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{doc.firstname}}</td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{doc.lastname}}</td>                                 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th> Scegli il professore: </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select ng-model="appello.id" >
+                                    <option  ng-repeat="doc in prof| filter:query" value="{{doc._id}}">{{doc.firstname}} {{doc.lastname}}</option>
+                                    <option selected value="">Scegli...</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        <button class="button button-dark" ng-click="verifyFeedback(appello)"> 
+        Conferma  </button>
+
+            <h3>feedback trovati:</h3>
+
+        <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Professore </th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>testo</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="x in feedback| filter:query"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{x.firstname}} {{x.lastname}} </td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{x.testo}}</td>
+                                                        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+    </ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+</ion-view>
