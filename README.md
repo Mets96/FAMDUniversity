@@ -72,25 +72,19 @@ Per installare MongoDB basta cliccare sul seguente link https://www.mongodb.com/
 
 # Utilizzo
 
-1. Aprire la cartella contenente il progetto
+1. Scaricare e aprire la cartella contenente il progetto
 
-2. Rinominare la cartella "Cartella file node" in "node_modules"
+2. Se si vuole utilizzare il proprio database aprire il file .env e sostituire a DB_URI il percorso del proprio server (DB_URI=”mongodb://FAMD:UniCam1996@ds251807.mlab.com:51807/famduniversityPORT=”27017)
 
-3. Se si vuole utilizzare il proprio server aprire il file .env e sostituire a DB_URI il percorso del proprio server
-(DB_URI="mongodb://FAMD:UniCam1996@ds251807.mlab.com:51807/famduniversity
-PORT="27017)
+3. Eseguire il comando “nodemon server.js” per avviare il server
 
-4. Eseguire il comando “nodemon server.js” per avviare il server
+In caso di problemi
 
- #In caso di problemi
+4. Eliminare la cartella “node_modules”
 
-5. Eliminare la cartella "node_modules"
+5. Aprire il terminale node.js come amministratore e posizionarsi nel percorso della cartella del progetto (cd...)
 
-6. Aprire il programma node.js command prompt come amministratore
-
-7. Posizionarsi nel percorso della cartella del progetto
-
-8. Eseguire i seguenti comandi in ordine:
+6. Eseguire i seguenti comandi in ordine:
 
    a) npm --add-python-to-path='true' --debug install --global windows-build-tools
 
@@ -102,5 +96,7 @@ PORT="27017)
 
    e) npm install
 
-9. Eseguire il comando “nodemon server.js” per avviare il server
+7. Eseguire il comando “nodemon server.js” per avviare il server
+
+8. Connettersi a http://localhost... per visualizzare il sito
 
