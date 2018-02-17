@@ -1,82 +1,81 @@
 <ion-view>
-        <ion-header-bar class="bar-stable">
-           <img src="/img/Logo.svg">
-           <div class="buttons">
-           <button class="button button-clear" ui-sref="outsidelogin"><b><h3>Menu</b></h3></button>
-          </div>
-        </ion-header-bar>
-        <link href="../../css/outside.home.css" rel="stylesheet">
-        <ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
-          
-            <br>
+    <ion-header-bar class="bar-stable">
+       <img src="/img/Logo.svg">
+       <div class="buttons">
+       <button class="button button-clear" ui-sref="outsidelogin"><b><h3>Menu</b></h3></button>
+      </div>
+    </ion-header-bar>
+    <link href="../../css/outside.home.css" rel="stylesheet">
+    <ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;" style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+      
         <br>
-        <br>
-        <center><h3>Account</h3></center>
-            <div class="list">
-                    <label class="item item-input">
-                      <span class="input-label">Username</span>
-                      <input type="text"  ng-model="user.username">
-                  </label>
-                  <label class="item item-input">
-                      <span class="input-label">Password</span>
-                      <input type="password" ng-model="user.password">
-                  </label>
-                  <br>
-                  <br>
-                 <center><h3>Informazioni personali</h3></center>
-                 <label class="item item-input">
-                      <span class="input-label">Email</span>
-                      <input type="email"  ng-model="user.email">
-                  </label>
-                  <label class="item item-input">
-                      <span class="input-label">Nome</span>
-                      <input type="text"  ng-model="user.firstname">
-                  </label>
-                  <label class="item item-input">
-                      <span class="input-label">Cognome</span>
-                      <input type="text"  ng-model="user.lastname">
-                  </label>
-                  <label class="item item-input">
-                      <span class="input-label">Data di nascita</span>
-                      <input type="date"  ng-model="user.bod">
-                  </label>
-                  <label class = "item item-input item-select item-light">
-                    <div class = "input-label">
-                       Sesso
-                    </div>
-                  
-                    <select ng-model="user.gender" >
-                       <option value="maschio">Maschio</option>
-                       <option value="femmina" >Femmina</option>
-                       <option selected value="">Scegli...</option>
-              
-                    </select>
-                  </label>
-                  <label class = "item item-input item-select item-light">
-                    <div class = "input-label">
-                       Corso
-                    </div>
-                    <select ng-model="user.corso" >
-                       <option value="informatica">Informatica</option>
-                       <option value="fisica">Fisica</option>
-                       <option value="chimica">Chimica</option>
-                       <option selected value="">Scegli...</option>
-                    </select>	
-                 </label>
-                  <label class="item item-input">
-                      <span class="input-label">Indirizzo</span>
-                      <input type="text" ng-model="user.address">
-                  </label>
-                  <label class="item item-input">
-                      <span class="input-label">Cellulare</span>
-                      <input type="tel" ng-model="user.cell">
-                  </label>
-                    
-                  </div>
-                  <center><button class="button button-dark" ng-click="addStudent()">
-                      Conferma
-                  </button></center>
-                  
-              
-                </ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
-              </ion-view>
+    <br>
+    <br>
+
+    <center><h3>Account</h3></center>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Username</span>
+        <input type="text"  ng-model="user.username">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.password">
+    </label>
+   <center><h3>Profile</h3></center>
+   <label class="item item-input">
+        <span class="input-label">email</span>
+        <input type="email"  ng-model="user.email">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Nome</span>
+        <input type="text"  ng-model="user.firstname">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Cognome</span>
+        <input type="text"  ng-model="user.lastname">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Data di nascita</span>
+        <input type="date"  ng-model="user.bod">
+    </label>
+    <label class = "item item-input item-select item-light">
+      <div class = "input-label">
+         Sesso
+      </div>
+	
+      <select ng-model="user.gender" >
+         <option value="maschio">Maschio</option>
+         <option value="femmina" >Femmina</option>
+         <option selected value="">Scegli...</option>
+
+      </select>
+    </label>
+    <label class = "item item-input item-select item-light">
+      <div class = "input-label">
+         Corso
+      </div>
+      <select ng-model="user.corso" >
+         <option value="informatica">Informatica</option>
+         <option value="fisica" >Fisica</option>
+         <option value="chimica">Chimica</option>
+         <option selected value="">Scegli...</option>
+      </select>	
+   </label>
+    <label class="item item-input">
+        <span class="input-label">Indirizzo</span>
+        <input type="text" ng-model="user.address">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Cellulare</span>
+        <input type="tel" ng-model="user.cell">
+    </label>
+      
+</div>
+<center><button class="button button-dark" ng-click="addStudent()">
+    Conferma
+</button></center>
+
+
+</ion-content style="background-image: url(../img/sfondofacolta.jpg); background-repeat:no-repeat; background-size: cover;">
+</ion-view>

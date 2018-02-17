@@ -100,8 +100,8 @@ exports.addProf= function(req,res) {
                         }
                       }
                       if(req.body.corso=='fisica'){
-                          if(req.body.insegnamenti!='fisica' && req.body.insegnamenti!='analisi' && req.body.insegnamenti!='meccanica' && req.body.insegnamenti!='geometria' && req.body.insegnamenti!='elettromagnetismo')
-                            return res.json({success:false,msg:'insegnamento non corretto, per questo corso scegliere tra : fisica, analisi, meccanica, geometria e elettromagnetismo'});
+                          if(req.body.insegnamenti!='meccanica' && req.body.insegnamenti!='analisi' && req.body.insegnamenti!='fisica' && req.body.insegnamenti!='geometria' && req.body.insegnamenti!='elettromagnetismo')
+                            return res.json({success:false,msg:'insegnamento non corretto, per questo corso scegliere tra : meccanica, analisi, fisica, geometria, elettromagnetismo'});
                           else{
                             var newProf = new Prof({
                               account_id:user._id,
@@ -137,8 +137,8 @@ exports.addProf= function(req,res) {
                           }
                         }
                         if(req.body.corso=='chimica'){
-                          if(req.body.insegnamenti!='chimica' && req.body.insegnamenti!='biochimica' && req.body.insegnamenti!='chimica_organica' && req.body.insegnamenti!='chimica_analitica' && req.body.insegnamenti!='chimica_alimenti')
-                              return res.json({success:false,msg:'insegnamento non corretto, per questo corso scegliere tra : chimica, biochimica, chimica analitica, chimica organica e chimica degli alimenti'});
+                          if(req.body.insegnamenti!='chimica' && req.body.insegnamenti!='biochimica' && req.body.insegnamenti!='chimica_analitica' && req.body.insegnamenti!='chimica_organica' && req.body.insegnamenti!='chimica_alimenti')
+                              return res.json({success:false,msg:'insegnamento non corretto, per questo corso scegliere tra : chimica, biochimica, chimica organica, chimica analitica, chimica alimenti'});
                           else{
                             var newProf = new Prof({
                               account_id:user._id,
