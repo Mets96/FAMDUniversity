@@ -596,7 +596,7 @@ exports.confermaVoto = function (req,res){
                                                                     }
                                                                 })
                                                             }
-                                                            
+                                                             //######################################################  ALTRI CASE PER LA CARRIERA DI INFORMATICA
                                                         }
                                                      //###################################################### ESAMI CHIMICA
                                                     if(currentaccount.corso='chimica'){
@@ -760,7 +760,6 @@ exports.confermaVoto = function (req,res){
                                                                     }
                                                                 })
                                                             }
-                                                             
                                                         }
                                                              //######################################################  ESAMI FISICA
                                                     if(currentaccount.corso='fisica'){
@@ -858,10 +857,10 @@ exports.confermaVoto = function (req,res){
                                                             })
                                                         }
                                                             //###################################################### CASE 4
-                                                        if(materia=='elettromagnetismo'){
+                                                        if(materia=='fisica'){
                                                             Fisica.findOne({
                                                                 account_id:currentaccount.account_id,
-                                                                'elettromagnetismo.voto':elenco.voto_provvisorio                                                                                    
+                                                                'fisica.voto':elenco.voto_provvisorio                                                                                    
                                                             }).exec(function(err,info){
                                                                 if(err)
                                                                     return res.json({success:false,msg:'errore durante la verifica del voto'});    
@@ -872,7 +871,7 @@ exports.confermaVoto = function (req,res){
                                                                         account_id:currentaccount.account_id
                                                                     },{
                                                                         $set:{
-                                                                            elettromagnetismo:{
+                                                                            fisica:{
                                                                                 voto:elenco.voto_provvisorio,
                                                                                 data:appello.data,
                                                                                 cfu:6,
@@ -889,10 +888,10 @@ exports.confermaVoto = function (req,res){
                                                             })
                                                         }
                                                             //###################################################### CASE 5
-                                                        if(materia=='fisica'){
+                                                        if(materia=='elettromagnetismo'){
                                                             Fisica.findOne({
                                                                 account_id:currentaccount.account_id,
-                                                                'fisica.voto':elenco.voto_provvisorio                                                                           
+                                                                'elettromagnetismo.voto':elenco.voto_provvisorio                                                                           
                                                             }).exec(function(err,info){
                                                                 if(err)
                                                                     return res.json({success:false,msg:'errore durante la verifica del voto'});    
@@ -903,7 +902,7 @@ exports.confermaVoto = function (req,res){
                                                                         account_id:currentaccount.account_id
                                                                     },{
                                                                         $set:{
-                                                                            fisica:{
+                                                                            elettromagnetismo:{
                                                                                 voto:elenco.voto_provvisorio,
                                                                                 data:appello.data,
                                                                                 cfu:12,
@@ -919,7 +918,6 @@ exports.confermaVoto = function (req,res){
                                                                 }
                                                             })
                                                         }
-                                                                
                                                     }
                                                 }
                                             })           

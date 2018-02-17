@@ -172,7 +172,7 @@ exports.addStudent = function(req,res,next) {
                         }
                     })
                 }
-                if(req.body.corso=='fisica'){
+                if(req.body.corso=='chimica'){
                     var newChimica = new Chimica({
                         account_id:user._id,
                     });
