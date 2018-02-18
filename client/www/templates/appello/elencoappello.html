@@ -13,7 +13,7 @@
             <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
                 <div id="testo"><h3>Appelli disponibili:</h3></div>
                     <div id="input">    
-                        <input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                        <!--<input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..." />-->
                 </div>
             </div> 
 
@@ -52,7 +52,7 @@
                             <td>
                                 <select ng-model="appello.id" >
                                     <option  ng-repeat="doc in doc| filter:query" value="{{doc._id}}">{{doc.data}} <h7>Ora:</h7> {{doc.ora}}</option>
-                                    <option selected value="">Scegli...</option>
+                                    <option selected value="">Seleziona...</option>
                                 </select>
                             </td>
                         </tr>
@@ -60,7 +60,7 @@
                 </table>
             </div>
 
-
+            <br>
             <button class="button button-dark" ng-click="iscrittiAppello(appello)">        Conferma    </button>
 
            <h3> Elenco:</h3>
@@ -91,7 +91,7 @@
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
                         <tr>
-                            <th> scegli lo studente</th>
+                            <th> Seleziona lo studente</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -99,7 +99,7 @@
                             <td>
                                 <select ng-model="appello.account_id" >
                                     <option  ng-repeat="x in iscritti|filter:x.voto_provvisorio==null |filter:query" value="{{x.account_id}}">{{x.nome}} {{x.cognome}}</option>
-                                    <option selected value="">Scegli...</option>
+                                    <option selected value="">Seleziona...</option>
                                 </select>
                             </td>
                         </tr>
@@ -116,7 +116,7 @@
                     </label>
                 </div> 
             </form>
-        
+            <br>
         <br>
         <button class="button button-dark" ng-click="caricavoto(appello)">         Conferma voto    </button>
 

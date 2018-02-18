@@ -195,32 +195,14 @@ angular.module("starter")
 })
 
 //############################################## CONTROLLER PER LA PAGINA D'INFORMATICA
-.controller('InformaticaCtrl', function($scope, AuthService, $ionicPopup, $state , Chart) {
+.controller('InformaticaCtrl', function($scope, AuthService, $ionicPopup, $state) {
   $scope.logout = function() {
     AuthService.logout();
     $state.go('outsidehome');
   };
- 
-    $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-    $scope.series = ['Series A', 'Series B'];
-    $scope.data = [
-        [65, 59, 80, 81, 56, 55, 40],
-        [28, 48, 40, 19, 86, 27, 90]
-    ];
- 
-
 
 })
-.controller("ExampleController", function($scope) {
- 
-    $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-    $scope.series = ['Series A', 'Series B'];
-    $scope.data = [
-        [65, 59, 80, 81, 56, 55, 40],
-        [28, 48, 40, 19, 86, 27, 90]
-    ];
- 
-})
+
 //############################################## CONTROLLER PER LA PAGINA DI FISICA
 .controller('FisicaCtrl', function($scope, AuthService, $ionicPopup, $state) {
   $scope.logout = function() {
@@ -606,11 +588,11 @@ angular.module("starter")
 
   function Main($scope) {
     $scope.carriera.carriera;
-    $scope.carriera.msg.chimica;
+    $scope.carriera.msg.computer_science;
+    $scope.carriera.msg.fisica;
+    $scope.carriera.msg.analisi;
     $scope.carriera.msg.biochimica;
-    $scope.carriera.msg.chimica_organica;
-    $scope.carriera.msg.chimica_analitica;
-    $scope.carriera.msg.chimica_alimenti;
+    $scope.carriera.msg.inglese;
   }
 
   $scope.logout = function() {
@@ -664,7 +646,7 @@ angular.module("starter")
 
   function Main($scope) {
     $scope.carriera.carriera;
-    $scope.carriera.msg.meccanica;
+    $scope.carriera.msg.logica;
     $scope.carriera.msg.geometria;
     $scope.carriera.msg.fisica;
     $scope.carriera.msg.elettromagnetismo;

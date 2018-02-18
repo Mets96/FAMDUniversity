@@ -13,7 +13,7 @@
             <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
                 <div id="testo"><h3>Appelli disponibili:</h3></div>
                     <div id="input">    
-                        <input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                        <!--<input style="background-color:#696977;" type="text" ng-model="query" placeholder="stai cercando..."/>-->
                 </div>
             </div> 
 
@@ -38,6 +38,7 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
+                        
                         <tr>
                             <th> Scegli l'appello che vuoi chiudere</th>
                         </tr>
@@ -47,7 +48,7 @@
                             <td>
                                 <select ng-model="appello.id" >
                                     <option  ng-repeat="doc in doc| filter:query" value="{{doc._id}}">{{doc.data}} <h7>Ora:</h7> {{doc.ora}}</option>
-                                    <option selected value="">Scegli...</option>
+                                    <option selected value="">Seleziona...</option>
                                 </select>
                             </td>
                         </tr>
@@ -56,7 +57,7 @@
             </div>        
 
             
-        
+            <br>
         
         <button class="button button-dark" ng-click="chiudiAppello(appello)">        Conferma    </button>
 
